@@ -1,0 +1,25 @@
+[submodule "vim/bundle/vim-ruby"]
+	path = vim/bundle/vim-ruby
+	url = http://github.com/vim-ruby/vim-ruby.git
+  ignore = dirty
+[submodule "vim/bundle/vim-colors-solarized"]
+	path = vim/bundle/vim-colors-solarized
+	url = http://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = http://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/vim-rails"]
+	path = vim/bundle/vim-rails
+	url = http://github.com/tpope/vim-rails.git
+[submodule "vim/bundle/supertab"]
+	path = vim/bundle/supertab
+	url = http://github.com/ervandew/supertab
+[submodule "vim/bundle/vim-railscasts-theme"]
+	path = vim/bundle/vim-railscasts-theme
+	url = http://github.com/jpo/vim-railscasts-theme.git
+[submodule "vim/bundle/vim-markdown"]
+	path = vim/bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "_config/awesome/themes"]
+	path = _config/awesome/themes
+	url = https://github.com/Morley93/awesome-themes-3.5.git

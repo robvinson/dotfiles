@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# start up the urxvt daemon
+# urxvtc to get terminals off of this daemon -- save memory!
+urxvtd -q -f -o

@@ -1,0 +1,31 @@
+if [[ $OSTYPE = darwin* ]]; then
+
+#add mac ports to our path
+#PATH=$PATH:/opt/local/bin
+
+# Turn on color ls
+export CLICOLOR="YES"
+
+# Override ls alias
+unalias ls
+alias ls='ls -F'
+
+function macports_install_bash () {
+	# update ports and install bash
+	echo "Updating ports"
+	sudo port selfupdate
+	echo "Installing bash"
+	sudo port install bash
+	
+	# check if we already have the shell
+	# listed in /private/etc/shells
+	grep '\/opt\/local\/bin\/bash' /private/etc/shells > /dev/null
+	if [ $? != "0" ]; then
+		echo "Adding the shell to /private/etc/shells"
+		sudo echo "/opt/local/bin/bash" >> /private/etc/shells
+	fi
+	chsh -s /opt/local/bin/bash
+	echo "Changes won't take effect until a new shell is opened"
+}
+
+fi #$OSTYPE darwin

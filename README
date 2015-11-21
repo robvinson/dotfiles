@@ -1,0 +1,11 @@
+##############
+# Installation
+##############
+
+To get started:
+
+cd dotfiles && rake init
+
+To update:
+
+cd dotfiles && rake update
